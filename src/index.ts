@@ -6,7 +6,12 @@ import { CustomMap } from "./CustomMap";
 /// <reference types="@types/google.maps" />
 
 
-new CustomMap('map')
+const customMap = new CustomMap('map')
+const user = new User()
+const company = new Company()
+
+customMap.addUserMarker(user)
+customMap.addCompanyMarker(company)
 
 
 
